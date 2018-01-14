@@ -1,0 +1,4 @@
+plugins:
+  tab_bar_enabled:
+    default: false
+    client: true

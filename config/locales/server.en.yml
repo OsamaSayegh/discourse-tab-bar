@@ -1,0 +1,6 @@
+en:
+  site_settings:
+    tab_bar_enabled: "Enable the tab bar plugin. (More settings <a href=\"/admin/plugins/tab-bar\">here</a>)"
+  tab_bar:
+    errors:
+      exceeded_amount_allowed_tabs: "You can't have more than 50 tabs."

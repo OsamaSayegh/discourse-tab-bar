@@ -1,0 +1,19 @@
+<td>
+  {{d-button class="no-text" icon="chevron-up" action="moveUp"}}
+  {{d-button class="no-text" icon="chevron-down" action="moveDown"}}
+</td>
+<td>
+  {{text-field value=tab.name}}
+</td>
+<td>
+  {{text-field value=tab.icon}}
+</td>
+<td>
+  {{text-field value=tab.dest}}
+</td>
+<td>
+  {{input type="checkbox" checked=tab.enabled}}
+</td>
+<td>
+  {{d-button class="no-text btn-danger" icon="trash-o" action="remove"}}
+</td>

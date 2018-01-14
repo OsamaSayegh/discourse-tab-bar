@@ -1,0 +1,35 @@
+#discourse-tab-bar-controls {
+  input[type="text"] {
+    margin-bottom: 0;
+    width: 140px;
+  }
+
+  table {
+    margin-bottom: 15px;
+
+    th, tr {
+      text-align: center;
+    }
+  }
+
+  .right {
+    float: right;
+  }
+
+  tr.inactive {
+    opacity: .5;
+  }
+
+  .tab-bar-preview {
+    position: relative;
+    height: $tab-bar-height + 45px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 45px;
+  
+    #discourse-tab-bar-preview {
+      position: absolute;
+      border: 1px solid $primary-low;
+    }  
+  }  
+}

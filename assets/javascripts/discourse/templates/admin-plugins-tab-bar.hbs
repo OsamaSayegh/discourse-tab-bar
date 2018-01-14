@@ -1,0 +1,53 @@
+<div id="discourse-tab-bar-controls">
+  {{#if currentUser.admin}}
+    <h2>{{i18n "tab_bar.settings"}}</h2>
+    <table>
+      <thead>
+        <th>{{i18n "tab_bar.head.position"}}</th>
+        <th>{{i18n "tab_bar.head.name"}}</th>
+        <th>{{i18n "tab_bar.head.icon"}}</th>
+        <th>{{i18n "tab_bar.head.destination"}}</th>
+        <th>{{i18n "tab_bar.head.enabled"}}</th>
+        <th>{{i18n "tab_bar.head.delete"}}</th>
+      </thead>
+
+      {{#each tabs as |tab|}}
+        {{tab-bar-controls-row tabs=tabs tab=tab}}
+      {{/each}}
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td>
+        <td>{{d-button 
+                 class="btn-normal add"
+                 icon="plus"
+                 action="add"
+                 disabled=createTabDisabled}}
+        </td>
+      </tr>
+    </table>
+
+    <div class="tab-bar-preview">
+      <h2>{{i18n "tab_bar.preview"}}</h2>
+      {{tab-bar tabs=enabledTabs disabled=true id="discourse-tab-bar-preview"}}
+    </div>
+
+    {{#if displayErrors}}
+      {{i18n "tab_bar.error" tabs=erroryTabs}}
+    {{/if}}
+
+    <div>
+      {{d-button label="tab_bar.save"
+                 class="btn-primary"
+                 icon="check"
+                 action="save"
+                 disabled=saveDisabled}}
+
+      {{#if saved}}
+        {{i18n "tab_bar.saved"}}
+      {{/if}}
+    </div>
+  {{else}}
+    <h2>
+      {{i18n "tab_bar.not_allowed"}}
+    </h2>
+  {{/if}}
+</div>

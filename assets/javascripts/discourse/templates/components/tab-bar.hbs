@@ -1,0 +1,6 @@
+{{#each tabs as |tab|}}
+  <div style="{{width}}" class="tab {{tab.status}}" {{action "navigate" tab.dest}}>
+    <i class="fa fa-{{tab.icon}}"></i>
+    <p class="title">{{tab.name}}</p>
+  </div>
+{{/each}}

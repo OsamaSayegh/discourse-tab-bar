@@ -1,0 +1,17 @@
+en:
+  js:
+    tab_bar:
+      settings: "Tab Bar Settings"
+      title: "Tab Bar"
+      add: "Add"
+      save: "Save"
+      saved: "Saved!"
+      preview: "Preview"
+      not_allowed: "This plugin can be configured by admins only."
+      head:
+        position: "Position"
+        name: "Name"
+        icon: "Icon"
+        destination: "Destination"
+        enabled: "Enabled"
+        delete: "Delete"
